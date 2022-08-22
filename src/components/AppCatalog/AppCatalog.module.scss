@@ -1,0 +1,12 @@
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.catalogName {
+  margin-bottom: 40px;
+}
+.catalogList {
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}

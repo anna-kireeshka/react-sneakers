@@ -1,0 +1,59 @@
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 23%;
+  border: 1px solid #F8F8F8;
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+  padding: 20px;
+
+  margin: 0 0 30px 0;
+
+}
+
+.card {
+  position: relative;
+  @include flexColumn;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.favoritesIcon {
+  position: absolute;
+  bottom: 90%;
+  right: 90%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.brandName {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: #000000;
+}
+.priceContainer {
+  @include flexColumn;
+  .priceName {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    color: #BDBDBD;
+  }
+  .price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+
+    color: #000000;
+
+  }
+}

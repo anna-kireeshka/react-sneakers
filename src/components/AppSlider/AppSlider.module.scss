@@ -1,0 +1,43 @@
+.sliderContainer {
+  padding: 45px 0;
+}
+
+.sliderList {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+  background-color: #F4EFE9;
+  border-radius: 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.brandsImg {
+  margin: 16px 0 32px 20px;
+}
+.brandName {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #000;
+  padding: 0 0 10px 61px;
+
+}
+.brandNameGreen {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #8BB43C;
+}
+.button {
+  background: #A5D364;
+  border-radius: 110px;
+  padding: 14px 40px;
+  outline: none;
+  border: none;
+  margin: 0 0 10px 61px;
+}
