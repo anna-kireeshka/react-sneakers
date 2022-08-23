@@ -8,19 +8,22 @@ function AppProductCard({item}) {
 
             <div className={styles.card}>
 
-                <button className={styles.favoritesIcon} title='Добавить в избранное'><img src={favorites} alt="Избранное"/></button>
+                <button className={styles.favoritesIcon} title='Добавить в избранное'>
+                    <img src={favorites} alt="Избранное"/>
+                </button>
                 <img src={item.image} alt="Кроссовки" width={185} height={144}/>
-
                 <p className={styles.brandName}>{item.title}</p>
             </div>
             <div>
-
-                <div className={styles.priceContainer}>
-                    <span className={styles.priceName}>Цена:</span>
-                    <span className={styles.price}>{item.price} руб.</span>
+                <div className={styles.cardInfoContainer}>
+                    <div className={styles.priceContainer}>
+                        <span className={styles.priceName}>Цена:</span>
+                        <span className={styles.price}>{item.price} руб.</span>
+                    </div>
+                    <button title="Добавить в корзину" className={styles.cardButton}><img src={addIcon} alt="Добавить в корзин"/></button>
                 </div>
-                <button title="Добавить в корзину"><img src={addIcon} alt="Добавить в корзин"/></button>
             </div>
+
         </div>
     );
 }
